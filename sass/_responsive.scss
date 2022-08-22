@@ -1,0 +1,114 @@
+@media (max-width:1200px) {
+    .container {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .participants {
+        max-width: 80%;
+        margin: 0 auto;
+
+        .list-item {
+            font-size: 1.4rem;
+
+            &:nth-child(even) {
+                padding-left: 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .banner {
+        height: 60vh;
+
+        .typo {
+            height: 75%;
+        }
+
+        .tagline {
+
+            .title {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        height: 100%;
+        grid-template-columns: 100%;
+        margin-top: 5rem;
+
+        .typo {
+            grid-row: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+
+    .participants {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        .typo img {
+            width: 100%;
+        }
+    }
+
+    .small-section {
+        overflow-x: clip;
+        font-size: 1rem;
+        padding: 4rem 1rem;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+        min-height: unset;
+
+        p {
+            font-size: .85rem;
+        }
+
+        .location {
+            margin-top: 1.5rem;
+
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .participants {
+        .list-item {
+            width: 100%;
+            font-size: 1.2rem;
+
+            &:nth-child(even) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .workshop .workshop-link .register {
+        font-size: 1.2rem;
+
+        svg {
+            margin-top: 2px;
+            width: 24px;
+        }
+    }
+
+    .workshop p {
+        margin: 5px 0;
+    }
+}
