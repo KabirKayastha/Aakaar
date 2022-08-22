@@ -63,12 +63,14 @@
     }
 
     .small-section {
-        overflow-x: clip;
+        // overflow-x: clip;
         font-size: 1rem;
         padding: 4rem 1rem;
-        // padding-left: 1rem;
-        // padding-right: 1rem;
         min-height: unset;
+
+        .shapes {
+            left: -90%;
+        }
 
         p {
             font-size: .85rem;

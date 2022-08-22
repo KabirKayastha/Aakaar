@@ -276,10 +276,12 @@ section {
     width: 100%;
   }
   .small-section {
-    overflow-x: clip;
     font-size: 1rem;
     padding: 4rem 1rem;
     min-height: unset;
+  }
+  .small-section .shapes {
+    left: -90%;
   }
   .small-section p {
     font-size: .85rem;
