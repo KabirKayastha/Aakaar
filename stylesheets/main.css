@@ -12,7 +12,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: .05em;
-  padding-bottom: 200px;
 }
 
 a {
@@ -41,6 +40,23 @@ section {
 .logo-container {
   position: absolute;
   top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container .link {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.logo-container .logo {
+  margin-right: 3rem;
 }
 
 .logo-container .logo svg {
@@ -109,6 +125,10 @@ section {
 
 .small-section {
   background-color: #CDC8AE;
+  background-image: url("../images/logo-opa.svg");
+  background-position: 100px center;
+  background-repeat: no-repeat;
+  background-size: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +149,11 @@ section {
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 150%;
+}
+
+.small-section.text-left {
+  text-align: left;
+  text-transform: unset;
 }
 
 .small-section .shapes {
@@ -186,8 +211,18 @@ section {
   margin-top: 3rem;
 }
 
+.workshop .workshop-link.center {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .workshop .workshop-link .register {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: .05em;
   font-weight: 700;
   display: -webkit-box;
@@ -196,7 +231,7 @@ section {
 }
 
 .workshop .workshop-link .register svg {
-  width: 32px;
+  width: 24px;
   stroke: #7AA496;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -214,6 +249,67 @@ section {
 
 .workshop .workshop-link .register .icon {
   margin-left: .5rem;
+}
+
+.workshop .grp {
+  margin-top: 3rem;
+}
+
+.workshop .grp .grp-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.workshop .grp .note {
+  margin-top: 2rem;
+}
+
+.exh-info {
+  text-transform: unset;
+}
+
+.exh-info p {
+  font-size: 1.8rem;
+  line-height: 170%;
+}
+
+.aakaar .info {
+  margin-top: 1.5rem;
+  line-height: 170%;
+}
+
+footer {
+  color: #55382F;
+  padding: 3rem 0 2rem;
+  border-top: 1px solid #55382F;
+}
+
+footer .flex,
+footer .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-logo img {
+  height: 80px;
+  margin-right: 1rem;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+footer .footer-bottom p {
+  font-size: 1rem;
+  line-height: 170%;
 }
 
 @media (max-width: 1200px) {
